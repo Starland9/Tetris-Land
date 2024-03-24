@@ -201,9 +201,8 @@ int main(int argc, char *argv[])
             }
         }
 
-        Uint32 tick = SDL_GetTicks();
-        printf("%d", tick);
-        if ((int)(tick % 100) == 0)
+        int tick = SDL_GetTicks();
+        if ((int)(tick % DOWN_TIME) == 0)
         {
             current_point.y += 1;
             current_point.x += 0;

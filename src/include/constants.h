@@ -1,7 +1,9 @@
 #define WINDOW_WIDTH 600
 #define WINDOW_HEIGHT 600
 
-#define BRIC_SIZE WINDOW_HEIGHT / 20
+#define BRIC_SIZE WINDOW_HEIGHT / 8
+
+#define DOWN_TIME 300
 
 SDL_Color white_color = {255, 255, 255, 255};
 SDL_Color black_color = {0, 0, 0, 0};
