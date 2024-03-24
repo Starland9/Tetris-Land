@@ -1,6 +1,6 @@
 // #define STATES states[WINDOW_WIDTH / BRIC_SIZE][WINDOW_HEIGHT / BRIC_SIZE]
 
-#include <SDL2/SDL.h>
+#include <SDL.h>
 #include <include/constants.h>
 #include <bric.c>
 #include <stdio.h>
@@ -202,7 +202,8 @@ int main(int argc, char *argv[])
         }
 
         Uint32 tick = SDL_GetTicks();
-        if (tick % 100 == 0)
+        printf("%d", tick);
+        if ((int)(tick % 100) == 0)
         {
             current_point.y += 1;
             current_point.x += 0;
