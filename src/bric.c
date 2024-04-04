@@ -144,52 +144,52 @@ int chair_left[2][4][4] = {
 void *get_form(int type, int *r_max)
 {
 
-    // switch (type)
-    // {
-    // case SQUARE:
-    //     *r_max = 1;
-    //     return &square;
-    //     break;
+    switch (type)
+    {
+    case SQUARE:
+        *r_max = 1;
+        return &square;
+        break;
 
-    // case LINE:
-    //     *r_max = 2;
+    case LINE:
+        *r_max = 2;
 
-    //     return &line;
-    //     break;
+        return &line;
+        break;
 
-    // case L_RIGHT:
-    //     *r_max = 4;
+    case L_RIGHT:
+        *r_max = 4;
 
-    //     return &l_right;
-    //     break;
+        return &l_right;
+        break;
 
-    // case L_LEFT:
-    //     *r_max = 4;
+    case L_LEFT:
+        *r_max = 4;
 
-    //     return &l_left;
-    //     break;
+        return &l_left;
+        break;
 
-    // case T:
-    //     *r_max = 4;
+    case T:
+        *r_max = 4;
 
-    //     return &t;
-    //     break;
+        return &t;
+        break;
 
-    // case CHAIR_RIGHT:
-    //     *r_max = 2;
+    case CHAIR_RIGHT:
+        *r_max = 2;
 
-    //     return &chair_right;
-    //     break;
+        return &chair_right;
+        break;
 
-    // case CHAIR_LEFT:
-    //     *r_max = 2;
+    case CHAIR_LEFT:
+        *r_max = 2;
 
-    //     return &chair_left;
-    //     break;
+        return &chair_left;
+        break;
 
-    // default:
-    //     break;
-    // }
+    default:
+        break;
+    }
     *r_max = 1;
     return &square;
 }
