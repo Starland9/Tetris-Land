@@ -4,7 +4,7 @@ project(Tetris VERSION 0.1.0 LANGUAGES C)
 include(CTest)
 enable_testing()
 
-add_executable(Tetris main.c) 
+add_executable(Tetris "src/main.c") 
 
 
 target_include_directories(
